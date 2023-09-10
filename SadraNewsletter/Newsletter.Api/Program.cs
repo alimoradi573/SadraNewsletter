@@ -52,6 +52,7 @@ app.UseCors(x => x
 
 
 app.UseHttpsRedirection();
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
