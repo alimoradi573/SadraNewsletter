@@ -1,0 +1,15 @@
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\bin\Debug\net7.0\Sadra.Newsletter.Application.deps.json
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\bin\Debug\net7.0\Sadra.Newsletter.Application.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\bin\Debug\net7.0\Sadra.Newsletter.Application.pdb
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\bin\Debug\net7.0\Sadra.Newsletter.Domain.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\bin\Debug\net7.0\Sadra.Newsletter.Domain.pdb
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.csproj.AssemblyReference.cache
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.AssemblyInfoInputs.cache
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.AssemblyInfo.cs
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.csproj.CoreCompileInputs.cache
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.csproj.CopyComplete
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\refint\Sadra.Newsletter.Application.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\Sadra.Newsletter.Application.pdb
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Application\obj\Debug\net7.0\ref\Sadra.Newsletter.Application.dll

@@ -1,0 +1,11 @@
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\bin\Debug\net7.0\Sadra.Newsletter.Domain.deps.json
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\bin\Debug\net7.0\Sadra.Newsletter.Domain.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\bin\Debug\net7.0\Sadra.Newsletter.Domain.pdb
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\Sadra.Newsletter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\Sadra.Newsletter.Domain.AssemblyInfoInputs.cache
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\Sadra.Newsletter.Domain.AssemblyInfo.cs
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\Sadra.Newsletter.Domain.csproj.CoreCompileInputs.cache
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\Sadra.Newsletter.Domain.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\refint\Sadra.Newsletter.Domain.dll
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\Sadra.Newsletter.Domain.pdb
+F:\My projects\SadraNewsletter\SadraNewsletter\Sadra.Newsletter.Domain\obj\Debug\net7.0\ref\Sadra.Newsletter.Domain.dll
