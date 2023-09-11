@@ -1,7 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Sadra.Newsletter.Application.DTOs;
-using Sadra.Newsletter.Application.Services;
 
 namespace Newsletter.Api.Controllers
 {
