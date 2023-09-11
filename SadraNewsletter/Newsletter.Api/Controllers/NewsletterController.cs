@@ -26,5 +26,15 @@ namespace Newsletter.Api.Controllers
             var result = await _newsletterService.CreateAsync(newsLetterDTO);
             return Ok(result);
         }
+
+        [HttpGet]
+        //[Authorize(Policy = Policies.Admin)]
+        public virtual async Task<IActionResult> Get(int id)
+        {
+            var result = await _newsletterService.GetAsync(id);
+            return Ok(result);
+        }
+
+
     }
 }

@@ -9,14 +9,9 @@ namespace Sadra.Newsletter.Application.DTOs
 {
     public class NewsLetterDTO
     {
-        public int Id { get; set; }  
-        public string Title { get; set; } 
-        public string Content { get; set; }  
-        public DateTime CreatedDate { get; set; } 
-        public DateTime SentDate { get; set; }  
-
-      
-        public ICollection<RecipientDTO> Recipients { get; set; } = new List<RecipientDTO>();
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
 
     }
 }

@@ -8,9 +8,15 @@ namespace Sadra.Newsletter.Domain.Entities
 {
     public class Recipient
     {
-        public int Id { get; set; }  
-        public string Name { get; set; } 
+        public Recipient()
+        {
+            RecivedDate = DateTime.Now;
+        }
+        public int Id { get; set; }
+        public int NewsLetterId{get;set;}
         public string Email { get; set; }  
-        public DateTime LastViewed { get; set; }  
+        public DateTime? LastViewed { get; set; }
+        public DateTime? GiveDate { get; set; }
+        public DateTime? RecivedDate { get; init; }
     }
 }

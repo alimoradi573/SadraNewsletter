@@ -10,13 +10,14 @@ namespace Sadra.Newsletter.Domain.Entities
     [AuditableAttribute]
     public class NewsLetter
     {
-        public int Id { get; set; }  
-        public string Title { get; set; } 
-        public string Content { get; set; } 
-        public DateTime CreatedDate { get; set; }  
-        public DateTime SentDate { get; set; } 
-
-        public ICollection<Recipient> Recipients { get; set; } = new List<Recipient>();
+        public NewsLetter()
+        {
+            this.CreatedDate = DateTime.Now;
+        }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public DateTime CreatedDate { get; init; }
 
     }
 }

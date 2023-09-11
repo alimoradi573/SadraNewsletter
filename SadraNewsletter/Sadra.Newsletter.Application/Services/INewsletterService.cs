@@ -1,4 +1,5 @@
 ﻿using Sadra.Newsletter.Application.DTOs;
+using System.Linq.Expressions;
 
 namespace Sadra.Newsletter.Application.Services
 {
@@ -6,7 +7,6 @@ namespace Sadra.Newsletter.Application.Services
     {
         Task<NewsLetterDTO> GetAsync(int id);
         Task<int> CreateAsync(NewsLetterDTO NewsLetter);
-        Task<NewsLetterDTO> UpdateAsync(NewsLetterDTO NewsLetter);
-        Task<int> DeleteAsync(int id);
+ 
     }
 }

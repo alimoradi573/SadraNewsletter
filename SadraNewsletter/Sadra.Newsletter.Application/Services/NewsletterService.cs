@@ -1,8 +1,11 @@
 ﻿
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Sadra.Newsletter.Application.DTOs;
 using Sadra.Newsletter.Application.IDatabaseContexts;
 using Sadra.Newsletter.Domain.Entities;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Sadra.Newsletter.Application.Services
 {
@@ -21,16 +24,6 @@ namespace Sadra.Newsletter.Application.Services
             _newsletterDbContext.NewsLetters.Add(_mapper.Map<NewsLetter>(dto));
             return await _newsletterDbContext.SaveChangesAsync();
         }
-        public async Task<int> DeleteAsync(int id)
-        {
-            var result = await _newsletterDbContext.NewsLetters.FindAsync(id);
-            if (result != null)
-            {
-                _newsletterDbContext.NewsLetters.Remove(result);
-                return await _newsletterDbContext.SaveChangesAsync();
-            }
-            return await _newsletterDbContext.SaveChangesAsync();
-        }
 
         public async Task<NewsLetterDTO> GetAsync(int id)
         {
@@ -38,23 +31,6 @@ namespace Sadra.Newsletter.Application.Services
             var res = _mapper.Map<NewsLetterDTO>(result);
             return await Task.FromResult(res);
         }
-
-        public async Task<NewsLetterDTO> UpdateAsync(NewsLetterDTO item)
-        {
-            var result = _newsletterDbContext.NewsLetters.Find(item.Id);
-            if (result != null)
-            {
-                _mapper.Map(item, result);
-                _newsletterDbContext.NewsLetters.Update(result);
-                _newsletterDbContext.SaveChanges();
-            }
-            var res = _mapper.Map<NewsLetterDTO>(result);
-            return await Task.FromResult(res);
-        }
-
-
-
-
-
+ 
     }
 }

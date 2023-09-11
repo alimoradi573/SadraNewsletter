@@ -48,9 +48,7 @@ namespace Newsletter.Api.Auth
                 {
                     new Claim("scope", $"{Permissions.Admin} " +
                     $" {Permissions.Author}" +
-                    $" {Permissions.Controller}" +
-                    $" {Permissions.Viewer}" +
-                    $" {Permissions.Worker}")
+                    $" {Permissions.Viewer}")
                 }),
                 SigningCredentials = sc,
             };
@@ -89,9 +87,7 @@ namespace Newsletter.Api.Auth
             {
                 options.AddPolicy(Policies.Admin, policy => policy.RequireAssertion(context => context.User.Claims.Any(x => x.Type == "scope" && x.Value.Split(' ').Contains(Permissions.Admin))));
                 options.AddPolicy(Policies.Author, policy => policy.RequireAssertion(context => context.User.Claims.Any(x => x.Type == "scope" && x.Value.Split(' ').Contains(Permissions.Author))));
-                options.AddPolicy(Policies.Controller, policy => policy.RequireAssertion(context => context.User.Claims.Any(x => x.Type == "scope" && x.Value.Split(' ').Contains(Permissions.Controller))));
                 options.AddPolicy(Policies.Viewer, policy => policy.RequireAssertion(context => context.User.Claims.Any(x => x.Type == "scope" && x.Value.Split(' ').Contains(Permissions.Viewer))));
-                options.AddPolicy(Policies.Worker, policy => policy.RequireAssertion(context => context.User.Claims.Any(x => x.Type == "scope" && x.Value.Split(' ').Contains(Permissions.Worker))));
             });
         }
 

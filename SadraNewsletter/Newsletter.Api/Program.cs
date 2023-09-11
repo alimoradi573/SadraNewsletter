@@ -2,8 +2,8 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Newsletter.Api.Auth;
-using Newsletter.Api.Mappings;
 using Sadra.Newsletter.Application.IDatabaseContexts;
+using Sadra.Newsletter.Application.Mappings;
 using Sadra.Newsletter.Application.Services;
 using Sadra.Newsletter.Persistence.DatabaseContexts;
 using System.ComponentModel;
@@ -11,6 +11,7 @@ using System.ComponentModel;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<INewsletterDbContext, NewsletterDbContext>();
 builder.Services.AddScoped<INewsletterService, NewsletterService>();
+builder.Services.AddScoped<IRecipientService, RecipientService>();
 string connection = builder.Configuration.GetSection("SqlConnection:newsletterDb").Value;
 builder.Services.AddEntityFrameworkSqlServer()
     .AddDbContext<NewsletterDbContext>(
@@ -45,9 +46,12 @@ builder.Services.AddPolicies();
 
 var config = new MapperConfiguration(cfg =>
 {
-    cfg.AddProfile<APIProfile>();
+    cfg.AddProfile<GeneralProfile>();
 });
 builder.Services.AddSingleton<IMapper>(x => new Mapper(config));
+
+ 
+
 
 var app = builder.Build();
 

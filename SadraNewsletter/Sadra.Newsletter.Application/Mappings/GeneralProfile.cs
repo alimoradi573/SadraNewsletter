@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Sadra.Newsletter.Application.DTOs;
 using Sadra.Newsletter.Domain.Entities;
+using System.Linq.Expressions;
 
 namespace Sadra.Newsletter.Application.Mappings
 {
@@ -10,7 +11,7 @@ namespace Sadra.Newsletter.Application.Mappings
         {
             CreateMap<NewsLetterDTO, NewsLetter>().ReverseMap();
             CreateMap<RecipientDTO, Recipient>().ReverseMap();
-
+            CreateMap<SendToRecipientDto, Recipient>().ReverseMap();
         }
     }
 }
